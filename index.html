@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portfolio | Web & Game Developer</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- GLOBAL BACKGROUND EFFECTS (Muncul di semua section) -->
+  <div class="global-bg">
+    <div class="global-pattern"></div>
+    
+    <div class="corner-wave top-left"></div>
+    <div class="corner-wave bottom-right"></div>
+    
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    
+    <div class="twinkling-stars">
+      <div class="star star-1"></div>
+      <div class="star star-2"></div>
+      <div class="star star-3"></div>
+      <div class="star star-4"></div>
+      <div class="star star-5"></div>
+      <div class="star star-6"></div>
+    </div>
+
+    <div class="floating-items">
+      <div class="float-item item-1">☕</div>
+      <div class="float-item item-2">🍩</div>
+      <div class="float-item item-3">🎮</div>
+      <div class="float-item item-4">💻</div>
+      <div class="float-item item-5">🍪</div>
+      <div class="float-item item-6">🍕</div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">
+        Portfolio<span class="dot-accent">.</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-item">Home</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#proyek" class="nav-item">Projects</a>
+        <a href="#sertifikat" class="nav-item">Certificates</a>
+        <button class="nav-btn open-contact-btn">Contact Me</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <div class="badge glass-badge">
+          <span class="dot"></span> Software Engineering Student
+        </div>
+        <h1 class="student-name">
+          Siti Nur <span class="highlight-brown">Shakila</span>.
+        </h1>
+        <p class="subtitle">
+          Hello! I'm a student focusing on Web & Game Development. I love solving problems with clean code, building responsive interfaces, and I am currently looking for an internship!
+        </p>
+        <div class="hero-actions">
+          <a href="#proyek" class="btn btn-primary glow-effect">View Projects</a>
+          <button class="btn btn-outline open-contact-btn">Contact Me</button>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://instagram.com/username_kamu" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:emailkamu@gmail.com" title="Send Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-card floating-anim" id="avatarCard" title="Click to open photo">
+          <img id="profileImg" src="images/foto2.png" alt="Student Photo">
+          <div class="click-hint">
+            <i class="fa-solid fa-expand"></i> View
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-title">
+        <span>Technical Skills</span>
+        <h2>Tech Stack I've Learned</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fa-brands fa-html5 skill-icon html"></i>
+          <h3>HTML5 & CSS3</h3>
+          <p>Semantic markup, modern layouts, grid & responsive design.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-js skill-icon js"></i>
+          <h3>JavaScript</h3>
+          <p>Dynamic interactivity, DOM manipulation, and REST APIs.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-php skill-icon php"></i>
+          <h3>PHP & MySQL</h3>
+          <p>Backend scripting, relational databases, and CRUD systems.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-unity skill-icon unity"></i>
+          <h3>Unity & C#</h3>
+          <p>Game loops, 2D/3D physics logic, and gameplay mechanics.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-git-alt skill-icon git"></i>
+          <h3>Git & GitHub</h3>
+          <p>Version control and collaborative code repository management.</p>
+        </div>
+        <div class="skill-card">
+          <i class="fa-brands fa-figma skill-icon figma"></i>
+          <h3>UI/UX Design</h3>
+          <p>Wireframing and designing interactive UI prototypes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="section projects-section" id="proyek">
+    <div class="container">
+      <div class="section-title">
+        <span>Portfolio</span>
+        <h2>Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=600&auto=format&fit=crop&q=80" alt="POS Application">
+          </div>
+          <div class="project-content">
+            <span class="category-badge cat-web">Web App</span>
+            <h3>Point of Sale (POS) System</h3>
+            <p>Mini-market cashier app featuring automatic transaction calculations, PDF receipt generation, and real-time stock management.</p>
+            <div class="project-links mt-auto pt-4">
+              <a href="#" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+              <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&auto=format&fit=crop&q=80" alt="2D Game">
+          </div>
+          <div class="project-content">
+            <span class="category-badge cat-game">Game Dev</span>
+            <h3>2D Pixel Platformer</h3>
+            <p>A 2D adventure game featuring double jump mechanics, interactive obstacles, enemy AI, and retro sound effects.</p>
+            <div class="project-links mt-auto pt-4">
+              <a href="#" class="link-btn"><i class="fa-solid fa-play"></i> Play Game</a>
+              <a href="#" class="link-btn"><i class="fa-brands fa-github"></i> Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES SECTION -->
+  <section class="section cert-section" id="sertifikat">
+    <div class="container">
+      <div class="section-title">
+        <span>Credentials & Validation</span>
+        <h2>Certifications</h2>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-icon-wrapper">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <div class="cert-details">
+            <span class="cert-issuer">Dicoding Academy</span>
+            <h3>Basic Web Programming</h3>
+            <p>Mastery of HTML5 standards, CSS3 responsive styling, flexbox, and modern web structure foundations.</p>
+            <div class="cert-meta">
+              <span><i class="fa-regular fa-calendar"></i> 2025</span>
+              <a href="#" class="cert-link">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon-wrapper">
+            <i class="fa-solid fa-gamepad"></i>
+          </div>
+          <div class="cert-details">
+            <span class="cert-issuer">Unity Learn</span>
+            <h3>Junior Programmer Pathway</h3>
+            <p>Game asset creation, C# player control, collision detection, and game UI integration.</p>
+            <div class="cert-meta">
+              <span><i class="fa-regular fa-calendar"></i> 2026</span>
+              <a href="#" class="cert-link">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CONTACT SECTION -->
+  <section class="section contact-redesign-section" id="kontak">
+    <div class="container">
+      <div class="contact-redesign-box">
+        <div class="contact-left">
+          <span class="touch-subtitle">LET'S COLLABORATE</span>
+          <h2 class="touch-title" style="margin-bottom: 20px;">Contact Info</h2>
+          
+          <div class="contact-extra-info">
+            <div class="extra-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span><strong>Location:</strong> Bogor, Indonesia</span>
+            </div>
+            <div class="extra-item">
+              <i class="fa-solid fa-briefcase"></i>
+              <span><strong>Status:</strong> Student</span>
+            </div>
+            <div class="extra-item">
+              <i class="fa-regular fa-clock"></i>
+              <span><strong>Response:</strong> Replies in ~1 hours</span>
+            </div>
+          </div>
+          
+          <div class="direct-contact-cards">
+            <a href="https://instagram.com/username_kamu" target="_blank" class="direct-card ig-card">
+              <i class="fa-brands fa-instagram direct-icon"></i>
+              <div>
+                <h4>DM Instagram</h4>
+                <p>@_shaakilll</p>
+              </div>
+            </a>
+            <a href="mailto:emailkamu@gmail.com" class="direct-card mail-card">
+              <i class="fa-solid fa-envelope direct-icon"></i>
+              <div>
+                <h4>Send Email</h4>
+                <p>shakila171710@gmail.com</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form id="quickMessageForm" class="quick-form">
+            <h3 class="form-title">Leave a Quick Message</h3>
+            <div class="input-group">
+              <input type="text" id="senderName" placeholder="Your Name" required />
+            </div>
+            <div class="input-group">
+              <input type="email" id="senderEmail" placeholder="Email Address" required />
+            </div>
+            <div class="input-group">
+              <textarea id="senderMsg" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Student Portfolio. Made with love & a warm cup of coffee ☕</p>
+    </div>
+  </footer>
+
+  <!-- MODAL: CONTACT HUB -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="contact-modal-card">
+      <button class="modal-close" id="closeContactModal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="contact-modal-header">
+        <div class="contact-icon-bubble">
+          <i class="fa-solid fa-hand-sparkles"></i>
+        </div>
+        <h3>Choose a Channel</h3>
+        <p>I usually reply to messages within 24 hours.</p>
+      </div>
+      <div class="contact-channel-list">
+        <a href="https://instagram.com/username_kamu" target="_blank" class="contact-channel-item ig">
+          <div class="channel-icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="channel-info">
+            <span class="channel-name">Instagram Direct Message</span>
+            <span class="channel-handle">@username_kamu</span>
+          </div>
+          <i class="fa-solid fa-chevron-right channel-arrow"></i>
+        </a>
+        <a href="mailto:emailkamu@gmail.com" class="contact-channel-item mail">
+          <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="channel-info">
+            <span class="channel-name">Send an Email</span>
+            <span class="channel-handle">emailkamu@gmail.com</span>
+          </div>
+          <i class="fa-solid fa-chevron-right channel-arrow"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: IMAGE POPUP -->
+  <div class="modal-overlay" id="imageModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeImageModal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-body">
+        <div class="modal-image-wrapper">
+          <img id="modalImg" src="" alt="Student Photo">
+          <span class="status-badge"><span class="pulse-dot"></span> Ready for Internship</span>
+        </div>
+        <div class="modal-info">
+          <div class="modal-title-group">
+            <span class="sub-badge">Junior Developer</span>
+            <h3>Shakil</h3>
+            <p class="school-tag"><i class="fa-solid fa-graduation-cap"></i> Software Engineering Student</p>
+          </div>
+          <p class="modal-desc">
+            Passionate about building clean web interfaces, diving into problem-solving algorithms, and designing fun 2D adventure games.
+          </p>
+          <div class="modal-skills-pill">
+            <span>Web Dev</span><span>PHP / MySQL</span><span>Unity 2D</span><span>Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
